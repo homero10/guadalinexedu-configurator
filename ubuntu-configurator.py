@@ -69,7 +69,7 @@ class GEDUConfig(Gtk.Window):
     def FileExplorerStatus(self):
         # List view is active:
         out, err = self.execute("gsettings get org.gnome.nautilus.preferences default-folder-viewer")
-        if out == "'list-view\n'":
+        if 'list-view' in out:
             return True
         else:
             return False
@@ -151,8 +151,9 @@ class GEDUConfig(Gtk.Window):
     def __init__(self):
         """ Class init event """
         # Setup the window with title and border width.
+        #### Cambio de titulo de la aplicacion para sistemas Ubuntu
         Gtk.Window.__init__(self, type=Gtk.WindowType.TOPLEVEL,
-                                  title="Configurador de Escritorio de Guadalinex Edu",
+                                  title="Configurador de Escritorio de Ubuntu",
                                   resizable=False,
                                   border_width=10)
 
