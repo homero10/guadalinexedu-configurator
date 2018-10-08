@@ -153,7 +153,7 @@ class GEDUConfig(Gtk.Window):
         # Setup the window with title and border width.
         #### Cambio de titulo de la aplicacion para sistemas Ubuntu
         Gtk.Window.__init__(self, type=Gtk.WindowType.TOPLEVEL,
-                                  title="Configurador de Escritorio de Ubuntu",
+                                  title="Miniconfigurador del escritorio de Ubuntu",
                                   resizable=False,
                                   border_width=10)
 
