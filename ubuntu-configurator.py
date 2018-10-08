@@ -224,12 +224,12 @@ class GEDUConfig(Gtk.Window):
             vbox.pack_start(boxbutton, False, False, 1)
 
         # Create the autologin switch
-        autologin_switch = Gtk.Switch()
-        autologin_switch.set_active(self.AutologinStatus())
-        autologin_switch.connect("notify::active", self.on_autologin_switch_changed)
+        #autologin_switch = Gtk.Switch()
+        #autologin_switch.set_active(self.AutologinStatus())
+        #autologin_switch.connect("notify::active", self.on_autologin_switch_changed)
 
         # Create the label for the autologin switch
-        autologin_label = Gtk.Label("Login automático para el usuario \"usuario\"")
+        #autologin_label = Gtk.Label("Login automático para el usuario \"usuario\"")
 
         # Position the Switch and its Label inside a Horizontal child box.
         # ----------------------------------------------------------------------- No volumes veisible switch in Xenial version
@@ -238,10 +238,10 @@ class GEDUConfig(Gtk.Window):
         # box.pack_end(nautilus_desktop_switch, False, False, 10)
         # vbox.pack_start(box, False, False, 0)
 
-        box = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 40)
-        box.pack_start(autologin_label, False, False, 10)
-        box.pack_end(autologin_switch, False, False, 10)
-        vbox.pack_start(box, False, False, 1)
+        #box = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 40)
+        #box.pack_start(autologin_label, False, False, 10)
+       # box.pack_end(autologin_switch, False, False, 10)
+        #vbox.pack_start(box, False, False, 1)
 
 	# Bloque para incluir el restaurador de escritorio
         box_dd = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 40)
