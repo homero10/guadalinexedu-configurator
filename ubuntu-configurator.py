@@ -244,13 +244,13 @@ class GEDUConfig(Gtk.Window):
         #vbox.pack_start(box, False, False, 1)
 
 	# Bloque para incluir el restaurador de escritorio
-        box_dd = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 40)
-	label_dd = Gtk.Label("Restaurar el escritorio por defecto de Guadalinex Edu")
-	button_dd = Gtk.Button("Ejecutar")
-	button_dd.connect("clicked", self.button_dd_clicked_cb)
-	box_dd.pack_start(label_dd, False, False, 10)
-	box_dd.pack_start(button_dd, False, False, 10)
-	vbox.pack_start(box_dd, False, False, 1)
+        #box_dd = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 40)
+	#label_dd = Gtk.Label("Restaurar el escritorio por defecto de Guadalinex Edu")
+	#button_dd = Gtk.Button("Ejecutar")
+	#button_dd.connect("clicked", self.button_dd_clicked_cb)
+	#box_dd.pack_start(label_dd, False, False, 10)
+	#box_dd.pack_start(button_dd, False, False, 10)
+	#vbox.pack_start(box_dd, False, False, 1)
 
         # Add the child box to the window
         self.add(vbox)
